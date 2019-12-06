@@ -5,18 +5,15 @@
   </div>
 </template>
 
-<script lang="ts">
-import {Component, Vue} from "vue-property-decorator";
-import TabBar from "@/components/TabBar.vue";
-
-@Component({
-  components: {
-    TabBar
+<script>
+  import TabBar from "@/components/TabBar.vue";
+  export default {
+    name: 'app',
+    components: {TabBar},
+    comments: {
+      TabBar
+    }
   }
-})
-export default class extends Vue {
-
-}
 </script>
 
 <style lang="scss">
@@ -28,4 +25,16 @@ export default class extends Vue {
   color: #2c3e50;
 }
 
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
 </style>
