@@ -1,0 +1,7 @@
+{
+  "appId": "<%= options.appId %>",
+  "appName": "<%= options.appName %>",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist"
+}
